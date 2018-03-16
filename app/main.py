@@ -156,9 +156,9 @@ def path(me, to):
 
 def set_goal(me):
     if me.health <= 30:
-        log = 'food'
-    log = 'floodfill'
-    return(log)
+        return('food')
+    else:
+        return('floodfill')
 
 
 '''
@@ -209,9 +209,6 @@ def safe_directions(me, enemy_list, grid):
                 backup_space.append(key)
 
     return(space, backup_space)
-
-
-
 
 
 '''
